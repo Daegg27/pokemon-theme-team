@@ -22,7 +22,6 @@ function GFG_Fun() {
     var img = document.createElement('img');
     img.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png';
     document.getElementById('body').appendChild(img);
-    down.innerHTML = "Image Element Added.";
 }
 
-getPokeBois()
+// getPokeBois()
