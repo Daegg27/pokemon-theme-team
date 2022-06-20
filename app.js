@@ -22,6 +22,10 @@ function GFG_Fun(event) {
     event.preventDefault()
 
     document.getElementById('first-picture').setAttribute("src", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png");
+    var d = document.createElement("div")
+    d.setAttribute("class", "show-types" )
+    document.getElementById('column-one').appendChild(d)
+    d.innerText = "Types: Water"
 }
 
 // getPokeBois()

@@ -9,7 +9,7 @@ body {
     height: 200px;
 }
 
-#first-row {
+.first-row {
     display: flex;
     align-content: center;
 }
