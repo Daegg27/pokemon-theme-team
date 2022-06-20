@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js" async></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>pokemon</title>
 </head>
 <body id="body">
-    <h1>Hello World!</h1>
+    <div class="container-flex">
+        <h1>Lets catch some Pokemon!</h1>
+        <div class="py-2"></div>
+        <div class="container">
+            <div id="first-row" class="row">
+                <div class="col-sm-4"><div class="image-holder"></div></div>
+                <div class="col-sm-4"><div class="image-holder"></div></div>
+                <div class="col-sm-4"><div class="image-holder"></div></div>
+            </div>
+        </div>
+        <div class="py-4"></div>
+        <div class="container">
+            <div id="first-row" class="row">
+                <div class="col-sm-4"><div class="image-holder"></div></div>
+                <div class="col-sm-4"><div class="image-holder"></div></div>
+                <div class="col-sm-4"><div class="image-holder"></div></div>
+            </div>
+    </div>
+    <div class="py-3"></div>
+    <form>
+        <button>Catch em' all!</button>
+    </form>
+    </div>
     <!-- <button id="my-button" onclick="getPokeBois()">Press me!</button> -->
-    <button id="my-button-pic" onclick="GFG_Fun()">Image!</button>
+    <!-- <button id="my-button-pic" onclick="GFG_Fun()">Image!</button> -->
 </body>
 </html>
