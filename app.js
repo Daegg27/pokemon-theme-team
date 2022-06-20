@@ -18,10 +18,12 @@
 //     }
 // }
 
-function GFG_Fun() {
+function GFG_Fun(event) {
+    event.preventDefault()
+    
     var img = document.createElement('img');
     img.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png';
-    document.getElementById('body').appendChild(img);
+    document.getElementById('first-picture').appendChild(img);
 }
 
 // getPokeBois()
