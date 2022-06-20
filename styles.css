@@ -27,3 +27,13 @@ body {
     position: relative;
     bottom: 8px;
 }
+
+.popup {
+    background-color: black;
+    color: Red;
+    font-weight: 900;
+    font-size: 100px;
+    height: 100-px;
+    width: 800px;
+    z-index: 200;
+}
