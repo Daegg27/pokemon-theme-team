@@ -20,10 +20,8 @@
 
 function GFG_Fun(event) {
     event.preventDefault()
-    
-    var img = document.createElement('img');
-    img.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png';
-    document.getElementById('first-picture').appendChild(img);
+
+    document.getElementById('first-picture').setAttribute("src", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png");
 }
 
 // getPokeBois()
