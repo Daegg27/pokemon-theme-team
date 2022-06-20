@@ -7,18 +7,20 @@
 
 
 
-const getPokeBois = async (event) => {
-    event.preventDefault()
+    const getPokeBois = async (event) => {
+        event.preventDefault()
+        document.getElementById("catch-button").setAttribute("disabled", "")
 
-    const boxes = document.querySelectorAll(".show-types")
-    boxes.forEach(box => {
+
+        boxes = document.querySelectorAll(".show-types")
+        boxes.forEach(box => {
         box.remove();
-    });
+        });
 
     
         let response = await axios.get('https://pokeapi.co/api/v2/pokemon/')
         let pokeNum = response.data.count
-        let randomNum = Math.floor(Math.random() * pokeNum)
+        let randomNum = Math.floor(Math.random() * 875)
         response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${randomNum}`)
         console.log(response)
         let pokeType = response.data.types[0].type['name'] // This could technically be a constant, unless you wanted to keep tracking
@@ -73,15 +75,15 @@ const getPokeBois = async (event) => {
         d.setAttribute("class", "show-types" )
         document.getElementById('column-six').appendChild(d)
         d.innerText = `${response.data.name}: ${pokeType}`
-        
+    
         // console.log("As requested:", pokeList)
         // console.log(response)
-        
+        document.getElementById("catch-button").removeAttribute("disabled");
     }
     
 
 
-function GFG_Fun(event) {
+    function GFG_Fun(event) {
     event.preventDefault()
 
     document.getElementById('first-picture').setAttribute("src", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png");
